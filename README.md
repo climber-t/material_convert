@@ -1,0 +1,2 @@
+# material_convert
+可将AD,PADS生成的坐标文件与SAP生成的物料结合用于SMT表贴中
