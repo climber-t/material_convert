@@ -1,0 +1,114 @@
+QWidget {
+    background-color:whitesmoke;
+}
+
+        /* 确保所有子部件透明 */
+QWidget * {
+            background: transparent;
+        }
+/* 标签栏按钮样式 */
+QWidget QFrame QPushButton {
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 8px;  /* 增加圆角 */
+    padding: 10px;       /* 增大按钮大小 */
+    color: #000;
+    font-size: 16px;     /* 增大字体大小 */
+    min-width: 120px;    /* 设置最小宽度 */
+}
+QWidget QFrame QPushButton:hover {
+    background-color: #ff5252;
+    color: white;
+    border: 2px solid #ff5252;
+}
+QWidget QFrame QPushButton:pressed {
+    background-color: #ff3b3b;
+    color: white;
+}
+QWidget QFrame QPushButton:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    border: 2px solid #999999;
+}
+/* 普通按钮样式 */
+QPushButton {
+    background-color: transparent;
+    /*background-color: #87CEEB;*/
+    border: 2px solid #333;
+    border-radius: 10px;  /* 增加圆角 */
+    padding: 12px;
+    color: #000;
+    font-size: 16px;
+    min-width: 100px;     /* 设置最小宽度 */
+}
+QMessageBox {
+    background-color: #87CEEB;
+    color: lime;
+}
+QPushButton:hover {
+    background-color: #ff5252;
+    color: white;
+    border: 2px solid #ff5252;
+}
+QPushButton:pressed {
+    background-color: #ff3b3b;
+    color: white;
+}
+QPushButton:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    border: 2px solid #999999;
+}
+/* 一键生成按钮特殊样式 */
+QPushButton#btn_generate_all {
+    background-color: transparent;
+    /*background-color: #87CEEB;*/
+    border: 2px solid #333;
+    border-radius: 10px;  /* 增加圆角 */
+    padding: 12px;
+    color: #000;
+    font-size: 24px;
+    border-radius: 15px;        /* 最大圆角 */
+}
+QPushButton#btn_generate_all:hover {
+    background-color: #ff5252;
+    color: white;
+    border: 2px solid #ff5252;
+}
+QPushButton#btn_generate_all:pressed {
+    background-color: #ff3b3b;
+    color: white;
+}
+QPushButton#btn_generate_all:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    border: 2px solid #999999;
+}
+
+/*QPushButton#btn_btn_generate_all:hover {*/
+/*    background-color: #E64A19;  !* 深橙色悬停 *!*/
+/*}*/
+
+/*QPushButton#btn_generate_all:pressed {*/
+/*    background-color: #BF360C;  !* 更深橙色按下 *!*/
+/*}*/
+
+
+/* 进度条样式 */
+QProgressBar {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;  /* 增加圆角 */
+    border: 1px solid #333;
+    font-size: 14px;     /* 增大字体大小 */
+}
+QProgressBar::chunk {
+    background-color: #4CAF50;
+    border-radius: 8px;  /* 增加圆角 */
+}
+/* 当前进度文字样式 */
+QLabel {
+    font-size: 30px;     /* 增大字体大小 */
+    font-family: 微软雅黑;  /* 设置字体为Arial */
+    color:black;         /* 设置字体颜色为白色 */
+     margin-top: 50px;
+}
